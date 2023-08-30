@@ -19,4 +19,9 @@ def pesquisa_binaria(lista,item):
 
 minha_lista = [1,3,5,7,9,10,14,16,19,20]
 
-print(pesquisa_binaria(minha_lista,10)) 
+pesquisa = pesquisa_binaria(minha_lista,20)
+
+if pesquisa != None:
+    print(f'O número pesquisado está na posição {pesquisa[0]} da lista, foram necessárias {pesquisa[1]} tentativas para encontrá-lo.')
+else:
+    print('O número procurado não faz parte da lista')
